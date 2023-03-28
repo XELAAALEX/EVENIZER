@@ -1,0 +1,106 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins', sans-serif;
+}
+.con{
+    width: 100vw;
+    height: 100vh;  
+    display: grid;
+    background: url("images/navy-blue-concrete-wall-with-scratches.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    place-content: center;
+
+}
+.slide{
+    max-width: 600px;
+    height: 400px;
+    position: relative;
+}
+.slide img{
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+  .slider-ite {
+    display: none;
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.slider-ite h3 {
+    position: absolute;
+    bottom:2rem ;
+    left: auto;
+  display: grid;
+  place-items: center;
+  color: #28273b;
+  text-align: center;
+  font-size: 2em;
+}
+
+.slider-ite h2{
+    position: absolute;
+    top: 1%;
+    left: 28%;
+    color: #fff;
+    text-align: center;
+    font-size: 4em;
+}
+
+.activ{
+    display: block;
+}
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    visibility: hidden;
+  }
+  
+  .slider-btn button {
+    font-size: 30px;
+    font-weight: 500;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: #fff;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .slide:hover .slider-btn{
+    visibility: visible;
+  }
+  .boo>h2{
+    color: aliceblue;
+    background: transparent;
+    position: absolute;
+    top: 5%;
+    left: 38%;
+    right: 50%;
+    font-size: 50px;
+    
+  }
+  .boo>h4{
+    color: aliceblue;
+    background: transparent;
+    position: absolute;
+    top: 15%;
+    left: 37%;
+    right: 20%;
+    font-size: 25px;
+  }
+
+  

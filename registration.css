@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background:url("images/OQ3D3S0.jpg");
+    background-repeat:no-repeat ;
+    background-size: 100%;
+    object-fit: cover;
+    
+}
+.container {
+    margin-top: 200px;
+    width: 25%;
+    color: aliceblue;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 20px 20px 4px rgba(0,0,0,0.3);
+    background: url("images/navy-blue-concrete-wall-with-scratches.jpg");
+    background-size: cover;  
+  }
+  
+.container > input{
+    text-align: center;
+    cursor: pointer;
+    padding: 5px 58px;
+    margin: 15px 0;
+    outline: none;
+
+    
+}
+.container > label{
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+  input:focus,
+  input:active {
+    border-color: transparent;
+    border-bottom: 2px solid #1c87c9;
+
+  }
+  .btn {
+    background: white;
+    color: navy;
+    border: none;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background: lightgray;
+    color: navy;
+  }
+  .clk{
+    word-spacing: 10px;
+    text-align: left;
+    font-size: 18px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+.reg{
+  margin-bottom: 30px;
+  background:url("images/OQ3D3S0.jpg");
+
+  border: .5px solid grey;
+  border: hidden;
+  border-radius: 20px;
+  box-shadow: 20px 20px 4px rgba(0,0,0,0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 200px;
+    width: 45%;
+    color: aliceblue;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 20px 20px 4px rgba(0,0,0,0.3);
+    background: url("images/navy-blue-concrete-wall-with-scratches.jpg");
+    background-size: cover;  
+  }
+}
+

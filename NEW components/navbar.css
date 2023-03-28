@@ -1,0 +1,28 @@
+.container {
+    margin: 0;
+    padding: 0;
+    background: black;
+    display: flex;
+    color: aliceblue;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    border-bottom: 1px solid whitesmoke;
+  }
+  
+  .box {
+    margin-right: 15px;
+    padding: 15px;
+  }
+  
+  .logo {
+    margin-right: auto;
+    margin-left: 40px;
+  }
+  
+  body {
+    margin: 0;
+  }
+  a{
+    text-decoration: none;
+  }

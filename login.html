@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <script
+    src="https://kit.fontawesome.com/0d760670bf.js"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <form>
+    <div class="container">
+        <h1 class="reg">LOGIN HERE</h1>
+        <label for="mail">Enter your E-mail:</label>
+        <input id="mail" type="email"><br>
+        <label for="password">Enter your Password:</label>
+        <input id="password" type="password">
+        <div class="submit-reg">
+            <span class="social-login">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>                </a>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>                </a>
+            </span>
+            <span class="Reset-password"><a href="reset.html">Reset Password?</a></span>
+            
+            <button class="btn" type="submit" onclick="login(event)">LOGIN</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>

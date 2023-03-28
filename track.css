@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    margin: 0;
+    padding: 0;
+    background: black;
+    display: flex;
+    color: rgb(246, 248, 249);
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    border-bottom: 1px solid whitesmoke;
+  }
+  
+  .box {
+    margin-right: 15px;
+    padding: 15px;
+  }
+  
+  .logo {
+    margin-right: auto;
+    margin-left: 40px;
+  }
+  @media screen and (max-width:786px) {
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo {
+      margin-left:0;
+      margin-right:0;
+    }
+  }
+  
+
+
+  
+  body {
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    color:#ddd;
+  }
+.slow{
+    background-color: rgb(194, 193, 193);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    user-select: none;
+}
+.contain{
+    width: 1000px;
+    height: 600px;
+    background-color: #fff;
+    color: white;
+    display: flex;
+}
+
+.ledger{
+    background-color: #2f3542;
+    padding: 20px;
+    flex: 1;
+}
+.ledger h2{
+    text-transform: uppercase;
+    color: #feca57;
+}
+.ledger h2,
+.ledger h4,
+.ledger h1{
+    font-weight: 600;
+    margin-bottom: 6px;
+    padding: 6px;
+}
+
+.inc-exp-container{
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+}
+.inc-exp-container div{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 22px;
+    font-size: 20px;
+    flex: 1;
+}
+.inc-exp-container div p{
+    font-size: 24px;
+}
+.inc-exp-container div.exp{
+    border: 3px solid rgb(184, 44, 44);
+    color: red;
+}
+.inc-exp-container div.inc{
+    border: 3px solid aqua;
+    color:aqua;
+}
+#form{
+    padding: 6px;
+    margin-top: 20px;
+}
+.form-control{
+    margin-top: 10px;
+}
+
+label{
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+input[type = "text"],
+input[type = "number"]{
+    border: 1px solid #dedede;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    outline: none;
+    border-radius: 2px;
+}
+.btn{
+    background-color: rgb(77, 23, 225);
+    color: #dedede;
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    padding: 10px;
+    font-size: 16px;
+    border: 0;
+    font-weight: 400;
+}
+.transaction{
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    color: black;
+}
+.transaction h3{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f1f1f1;;
+    margin-bottom: 5px;
+}
+.trans{
+    list-style-type:none;
+}
+.trans li{
+    background-color: #fff;
+    color: #333;
+    box-shadow: 2px 2px 2px gainsboro;
+    padding: 10px;
+    margin: 10px 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    cursor: pointer;
+}
+.trans li.inc{
+    border-left: 5px solid aquamarine;
+}
+.trans li.exp{
+    border-left: 5px solid red;
+}
+.btn-del{
+    position: absolute;
+    top: -11px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 30%;
+    font-weight: 600;
+    line-height: 20px;
+    color: #fff;
+    background-color: red;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.trans li:hover .btn-del{
+    opacity: 1;
+}
+
+
+@media screen and (max-width:786px) {
+    .slow{
+        background-color: rgb(194, 193, 193);
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        user-select: none;
+    }
+    .contain{
+        width: 700px;
+        height: 600px;
+        background-color: #fff;
+        color: white;
+        display: flex;
+    }
+}

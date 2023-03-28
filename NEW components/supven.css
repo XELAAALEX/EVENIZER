@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.lan {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background: url("images/pexels-pixabay-326347.jpg");
+  overflow-y: auto;
+  background-size: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid1xx3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+  
+}
+
+.grid1xx3 > * {
+  color: #7a4f4f;
+  border-radius: 1.25rem;
+  height: 250px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  
+}
+
+.grid1xx3 > *:hover {
+  color: #333;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  transform: rotate(-10deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.sets {
+  position: relative;
+  padding: 1rem;
+}
+
+.ima > img {
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: 6rem;
+  right:2.5rem;
+}
+
+.book {
+  right: 5.5rem;
+  bottom: 2rem;
+  position: absolute;
+  background-color: #ff7f50;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.book:hover {
+  background-color: #ff6347;
+}
+
+.info {
+  top: 2rem;
+  left: 1rem;
+  position: absolute;
+}
+
+.contracts {
+  position: absolute;
+  bottom: 4rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+.sets>.contracts{
+  visibility: hidden;
+}
+.sets:hover .contracts {
+  visibility: visible;
+}
+.ll {
+  max-width: 100%;
+  margin:50px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.ll-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.ll-image {
+  max-width: 800px;
+  margin-right: 20px;
+  flex: 1;
+}
+
+.ll-text {
+  flex: 1;
+  line-height: 3.5rem;
+  font-weight: 600;
+}
+
+.ll h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.ll p {
+  margin: 10px 0;
+  padding-left: 20px;
+  text-indent: -20px;
+}
+
+.ll p:before {
+  content: "\2022";
+  color: #4c4c4c;
+  display: inline-block;
+  width: 20px;
+  margin-left: -20px;
+}
+
+@media screen and (max-width: 768px) {
+  .ll p {
+    width: 100%;
+  }
+}

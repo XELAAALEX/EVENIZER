@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE EVENTS</title>
+    <link rel="stylesheet" href="createevent.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img width="80" src="images/Beverage-Wine-256.png" alt="">
+        </div>
+        <div class="box"><a href="main.html" target="_blank">HOME</a></div>
+        <div class="box nav__item dropdown"><a href="#">EVENTS</a> 
+            <div class="dropdown-content">
+                <a href="main.html#late">Past Events</a>
+                <a href="main.html#features">Upcoming Events</a>
+              </div>  
+        </div>        <div class="box"><a href="track.html" target="_blank">TRACK</a></div>
+        <div class="box"><a href="main.html#plan">SERVICES</a></div>
+    </div>
+    <div class="wrapper">
+        <div><h1>CREATE EVENTS</h1></div>
+        <div class="new-container">
+            <form action="sub.html" method="GET">
+                <div class="grid1xx2">
+                    <div class="f1">
+                        <label for="time">TIME</label>
+                        <input type="time" id="time" name="time">
+                        <label for="date">DATE</label>
+                        <input type="date" id="date" name="date">
+                        <label for="location">LOCATION</label>
+                        <input type="text" name="location" id="location">
+                        <label for="guest">GUEST-LIST</label>
+                        <input type="text" id="guest">
+                    </div>
+                    <div class="f2">
+                        <label for="description">INVITATION INFO</label>
+                        <textarea id="description" name="description"></textarea>
+                        <label for="description">EMAIL</label>
+                        <input type="email" name="amail" id="emaill">
+                    </div>
+                </div>
+                <div>
+                    <button class="btn" type="submit">SUBMIT</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+    
+    <script src="createevent.js"></script>
+</body>
+</html>

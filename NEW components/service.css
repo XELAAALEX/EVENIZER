@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ser h2{
+    text-align: center;
+    padding:20px;
+}
+.ser span{
+    display: block;
+    color: rgb(244, 148, 31);
+    font-style: italic;
+}
+.ser p{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom:45px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.backser{
+    width: 100vw;
+    height: auto;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.sergrid1x3{
+    font-size: 20px;
+    width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    background-color: rgb(253, 250, 250);
+    border-radius: 30px;
+    padding: 20px;
+}
+.sergrid1x3 img{
+    width: 100px;
+    height: auto;
+    margin: 20px;   
+}
+.sergrid1x3 img:hover{
+    background: transparent;
+    filter: brightness(1) contrast(1.2) saturate(1.3);
+}
+.sergrid1x3 :hover{
+    background-color:bisque ;
+    color: rgb(42, 49, 54);
+}
+.sergrid1x3 h4:hover{
+    font-weight: bolder ;
+    transform: scale(1.05);
+}
+.sergrid1x3 p:hover{
+    font-weight: lighter;
+    transform: scale(1.05);
+}
+.ban {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: aliceblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.ban p{
+    width: 200px;
+    margin: 10px;
+}
+.ban button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(147, 203, 231);
+    color: rgb(20, 20, 17);
+    border: none;
+    margin: 10px;
+}
+.ban button:hover{
+    background-color: rgb(250, 200, 2);
+}
+
+
+
+.plan{
+    width: 100%;
+    background-image: url("images/pexels-wolfgang-2747449.jpg");
+    background-size: 100%;
+    color:aliceblue;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+.plans{
+    width: 1200px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.fullserv {
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 2px 2px 2px rgb(74, 70, 70);
+    line-height: 3;
+    transition: all 0.2s ease-in-out; 
+  }
+  
+  .fullserv:hover {
+    background-color: #747975;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4); 
+    color: white;
+    transform: scale(1.05);
+  }
+  
+.fullserv p{
+    color: rgb(230, 142, 11);
+}
+.fullserv h2{
+    color: #170f03;
+}
+
+.fullserv .round{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: bisque;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: rgb(174, 182, 188);
+}
+.fullserv button{
+    margin-top: 10px;
+    background-color: rgb(73, 101, 101);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .lan {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background: url("images/pexels-pixabay-326347.jpg");
+    overflow-y: auto;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .grid1xx3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+    
+  }
+  
+  .grid1xx3 > * {
+    color: #7a4f4f;
+    border-radius: 1.25rem;
+    height: 250px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+  }
+  
+  .grid1xx3 > *:hover {
+    color: #333;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    transform: rotate(-10deg);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .sets {
+    position: relative;
+    padding: 1rem;
+  }
+  
+  .ima > img {
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    top: 6rem;
+    right:2.5rem;
+  }
+  
+  .book {
+    right: 5.5rem;
+    bottom: 2rem;
+    position: absolute;
+    background-color: #ff7f50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .book:hover {
+    background-color: #ff6347;
+  }
+  
+  .info {
+    top: 2rem;
+    left: 1rem;
+    position: absolute;
+  }
+  
+  .contracts {
+    position: absolute;
+    bottom: 4rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  h4 {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  .sets>.contracts{
+    visibility: hidden;
+  }
+  .sets:hover .contracts {
+    visibility: visible;
+  }
+  .ll {
+    max-width: 100%;
+    margin:50px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .ll-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .ll-image {
+    max-width: 800px;
+    margin-right: 20px;
+    flex: 1;
+  }
+  
+  .ll-text {
+    flex: 1;
+    line-height: 3.5rem;
+    font-weight: 600;
+  }
+  
+  .ll h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .ll p {
+    margin: 10px 0;
+    padding-left: 20px;
+    text-indent: -20px;
+  }
+  
+  .ll p:before {
+    content: "\2022";
+    color: #4c4c4c;
+    display: inline-block;
+    width: 20px;
+    margin-left: -20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .ll p {
+      width: 100%;
+    }
+  }

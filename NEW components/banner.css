@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .banner {
+    height: 100vh;
+    background-image: url("images/pexels-nicole-michalou-5779176.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .navletter {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-shadow: 2px 2px 4px #000000;
+    
+  }
+  
+  .btnnav {
+    position: absolute;
+    top: 80%;
+    left: 42%;
+  }
+  
+  .btnnav button {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 28px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #888888;
+    transition: background-color 0.3s ease;
+    filter: brightness(0.8) contrast(1.2) saturate(1.1);
+  }
+  
+  .btnnav button:hover {
+    background-color: #ff8000;
+    filter: brightness(1) contrast(1.2) saturate(1.3);
+  }
+  
