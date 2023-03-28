@@ -6,3 +6,4 @@ document.getElementById('time').textContent = params.get('time');
 document.getElementById('date').textContent = params.get('date');
 document.getElementById('location').textContent = params.get('location');
 document.getElementById('description').textContent = params.get('description');
+document.getElementById('select').textContent = params.get('Catogory');

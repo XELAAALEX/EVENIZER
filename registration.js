@@ -7,7 +7,7 @@ function reg(event) {
 
 
     if (!nameInput.value.trim()) {
-        alert("Please enter a name that is at least 4 characters long.");
+        alert("Please enter a name .");
         return;
     }
 

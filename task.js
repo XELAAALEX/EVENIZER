@@ -1,3 +1,4 @@
+//storing info for each card as a object
 const assign = [{
     id:1,
     img:"images/pexels-creation-hill-1681010.jpg",
@@ -29,10 +30,10 @@ const assign = [{
   }];
   
   const generatecontainer = () => {
-    return assign.map((x) => {
+    return assign.map((x) => { //mapping every info object with the code
       return `
         <div class="card">
-          <img src=${x.img}>
+          <img src=${x.img}> 
           <h2>${x.name}</h2>
           <select name="pets" id="pet-select">
             <option value="">--ASSIGN TASK--</option>
@@ -51,34 +52,31 @@ const assign = [{
   row.innerHTML = generatecontainer();
   
 
-
   const progressBar = document.querySelector('.progress-bar');
-const taskButtons = document.querySelectorAll('.task-button');
-let progress = 0;
-
-taskButtons.forEach((button, index) => {
-  button.addEventListener('click', () => {
-    // Check if all previous tasks have been completed
-    let previousTasksCompleted = true;
-    for (let i = 0; i < index; i++) {
-      if (!taskButtons[i].checked) {
-        previousTasksCompleted = false;
-        break;
+  const taskButtons = document.querySelectorAll('.task-button');
+  let progress = 0;
+  
+  taskButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      // Check if all previous tasks have been completed
+      let previousTasksCompleted = true;
+      for (let i = 0; i < index; i++) {
+        if (!taskButtons[i].checked) {
+          previousTasksCompleted = false;
+          break;
+        }
       }
-    }
-
-    if (previousTasksCompleted) {
-      // Update progress and progress bar
-      progress = button.getAttribute('data-progress');
-      progressBar.style.height = progress + '%';
-
-      // Select all previous tasks
-      for (let i = 0; i <= index; i++) {
-        taskButtons[i].checked = true;
+  
+      if (previousTasksCompleted) {
+        // Update progress and progress bar
+        progress = parseInt(button.value);
+        progressBar.style.height = progress + '%';
+      } else {
+        // Deselect the clicked task if previous tasks are not completed
+        button.checked = false;
+        progress -= parseInt(button.value);
+        progressBar.style.height = progress + '%';
       }
-    } else {
-      // Deselect the clicked task if previous tasks are not completed
-      button.checked = false;
-    }
+    });
   });
-});
+  

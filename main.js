@@ -3,8 +3,9 @@ let currentslide = 0;
 const sliders = document.querySelectorAll(".slider-item");
 const totalslides = sliders.length;
 
-const prev = document.getElementById("btn-prev");
-const next = document.getElementById("btn-next");
+const prev = document.getElementById("btn-prev");//selecting the left button to move the slide
+const next = document.getElementById("btn-next");//selecting the right button to move the slide
+
 prev.addEventListener("click", ()=>{
     dec();
 })
@@ -40,6 +41,7 @@ function inc(){
     
     update();
 }
+// to move the slide per 3 sec
 setInterval(()=>{
     if(currentslide == sliders.length-1){
         currentslide = 0;

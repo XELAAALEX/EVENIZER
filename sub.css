@@ -129,8 +129,8 @@
     gap: 2rem;
 }
 .fullserv {
-    background-color: aliceblue;
-    color: black;
+  background-color:bisque;
+  color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,7 +209,6 @@
       grid-template-columns: repeat(2,1fr);
       gap: 3.5rem;
   }
-
   .plan{
     width: 100%;
     background-image: url("images/pexels-wolfgang-2747449.jpg");
